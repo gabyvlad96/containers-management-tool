@@ -49,7 +49,7 @@ def main():
     status_state_list = load_status_state_list()
     while True:
         check_containers_status(status_state_list)
-        time.sleep(15.0 - ((time.time() - start_time) % 15.0))
+        time.sleep(30.0 - ((time.time() - start_time) % 30.0))
 
 if __name__ == "__main__":
     main()
